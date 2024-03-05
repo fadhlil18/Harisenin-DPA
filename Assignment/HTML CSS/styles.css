@@ -41,7 +41,7 @@ button:hover{
     outline:none;
     margin-bottom: 13px;
     font-stretch: 15px;
-    color: #999;
+    color: #162D3A;
     text-align: left;
     padding: 14px 20px;
     width: 100%;
@@ -55,7 +55,6 @@ button:hover{
     background: transparent;
     border: 1px solid #162D3A;
 }
-
 .login-form button{
     color: #fff;
     width: 100%;
