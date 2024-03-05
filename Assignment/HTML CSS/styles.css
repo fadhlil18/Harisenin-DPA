@@ -14,7 +14,7 @@
 }
 .content{
     flex-basis: 65%;
-    padding: 3em 3em;
+    padding: 5em 5em;
 }
 .form-img{
     flex-basis: 35%;
@@ -28,7 +28,6 @@
     align-items:right;
 }
 p{
-    font-size: 16px;
     line-height: 25px;
 }
 .btn,button,input{
@@ -42,8 +41,8 @@ button:hover{
 
 .login-form input{
     outline: grey;
-    margin-bottom: 15px;
-    font-stretch: 16px;
+    margin-bottom: 13px;
+    font-stretch: 15px;
     color: #999;
     text-align: left;
     padding: 14px 20px;
@@ -60,7 +59,6 @@ button:hover{
 }
 
 .login-form button{
-    font-size: 18px;
     color: #fff;
     width: 100%;
     background: #162D3A;
@@ -81,6 +79,39 @@ div a{
 div a:hover{
  text-decoration: underline;
 }
-.right-color{
+.cright{
     color:#959CB6;
 }
+.top-img{
+    width:100%;
+    height:160px;
+    object-fit: cover;
+    border-radius:5%;
+}
+@media only screen and (max-width: 640px) {
+    .right-img {
+      display:none;
+    }
+    .content{
+        flex-basis: 100%;
+        padding: 5em 5em;
+    }
+    .text-responsive{
+        margin-top:margin-top: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .right-img {
+      display:none;
+    }
+    .content{
+        flex-basis: 100%;
+        padding: 5em 5em;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .top-img {
+        display:none;
+  }
