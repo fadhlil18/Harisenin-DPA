@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-
 .login-form{
     min-height: 100vh;
     justify-content: center;
@@ -14,7 +13,7 @@
 }
 .content{
     flex-basis: 65%;
-    padding: 5em 5em;
+    padding: 2em 5em;
 }
 .form-img{
     flex-basis: 35%;
@@ -35,12 +34,11 @@ p{
 }
 .btn:hover,
 button:hover{
-  color: grey;
+    color: #8897AD;
     transition: 0.5s ease;
 }
-
 .login-form input{
-    outline: grey;
+    outline:none;
     margin-bottom: 13px;
     font-stretch: 15px;
     color: #999;
@@ -49,7 +47,7 @@ button:hover{
     width: 100%;
     display: inline-block;
     box-sizing: border-box;
-    border: none;
+    border: 1px solid #8897AD;
     background: #f7fafc;
     transition: 0.3s ease;
 }
@@ -84,7 +82,7 @@ div a:hover{
 }
 .top-img{
     width:100%;
-    height:160px;
+    max-height:160px;
     object-fit: cover;
     border-radius:5%;
 }
@@ -100,17 +98,15 @@ div a:hover{
         margin-top:margin-top: 0px;
     }
   }
-
   @media only screen and (max-width: 1024px) {
     .right-img {
       display:none;
     }
     .content{
         flex-basis: 100%;
-        padding: 5em 5em;
+        padding: 5em 3em;
     }
   }
-
   @media only screen and (min-width: 1024px) {
     .top-img {
         display:none;
