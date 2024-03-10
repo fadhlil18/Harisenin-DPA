@@ -5,26 +5,17 @@
     box-sizing: border-box;
     font-family: 'poppins',sans-serif;
 }
-.login-form{
-    min-height: 100vh;
-    justify-content: center;
-    display: flex;
-    font-family: 'poppins',sans-serif;
-}
+
 .content{
-    flex-basis: 65%;
     padding: 2em 5em;
-}
-.form-img{
-    flex-basis: 35%;
-    padding: 10px;
-    align-items: center;
-    display:flex;
-    justify-content:right;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
 .form-img img{
-    border-radius: 5%;
-    align-items:right;
+    max-width: 70vh; 
+    border-radius: 25px;
+    margin:0px 50px;
 }
 p{
     line-height: 25px;
@@ -34,9 +25,10 @@ p{
 }
 .btn:hover,
 button:hover{
-    color: #8897AD;
+    background-color: black;
     transition: 0.5s ease;
 }
+
 .login-form input{
     outline:none;
     margin-bottom: 13px;
@@ -79,34 +71,37 @@ div a:hover{
 .cright{
     color:#959CB6;
 }
-.top-img{
-    width:100%;
-    max-height:160px;
-    object-fit: cover;
-    border-radius:5%;
-}
 @media only screen and (max-width: 640px) {
-    .right-img {
-      display:none;
-    }
     .content{
+        display: block;
         flex-basis: 100%;
         padding: 5em 5em;
+    } 
+    .form-img img{
+        max-height: 25vh;
+        object-fit: cover;
+        width:100%;
+        border-radius: 5px;
+        margin:0px 0px;
     }
     .text-responsive{
-        margin-top:margin-top: 0px;
+        margin-top: 0px;
     }
   }
   @media only screen and (max-width: 1024px) {
-    .right-img {
-      display:none;
-    }
     .content{
-        flex-basis: 100%;
+        display: block;
         padding: 5em 3em;
     }
+    .form-img img{
+        max-height: 15vh;
+        object-fit: cover;
+        width:100%;
+        border-radius: 5px;
+        margin:0px 0px;
+    }
+    .text-responsive{
+        margin-top: 0px;
+    }
   }
-  @media only screen and (min-width: 1024px) {
-    .top-img {
-        display:none;
-  }
+
