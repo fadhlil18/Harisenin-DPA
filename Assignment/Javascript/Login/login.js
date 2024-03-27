@@ -5,18 +5,21 @@ async function fetchData() {
 }
 
 function loginCheck(data) {
-  document.getElementById('form-login').addEventListener('submit', function (event) {
+    document.getElementById('form-login').addEventListener('submit', function (event) {
     event.preventDefault();
+    
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
-    let href = "../Home/index.html"
+    let href = "../Home/index.html" 
     let authenticated = false;
+    
     for (let i = 0; i < data.length; i++) {
       if (email === data[i].Email && password === data[i].Password) {
         authenticated = true;
         break;
       }
     }
+    
     if (authenticated) {
       window.location.href = href
     } else {
