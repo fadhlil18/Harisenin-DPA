@@ -40,6 +40,12 @@ function cardShow(data) {
   )
 }
 
+function loadImg(data){
+  for (let i = 0; i < data.length; i++){
+  console.log(data.picture[i])
+  }
+}
+
 function monthName(data) {
       let date = new Date(data * 1000);
       let month = date.getMonth();
@@ -53,6 +59,14 @@ function dateConverter(data) {
   let dateNew = dateUnix.getDate();
   return dateNew
 }
+
+// function imgProduct(data) {
+//   for (let i=0;i<data.length;i++){
+//           let idLength = data[i].picture.length;
+//           for (let j=0;j<idLength;j++){
+//           console.log(data[i].picture[j])}
+//   }
+// }
 
 function displayCard(data) {
   const containerElm = document.getElementById('products')
