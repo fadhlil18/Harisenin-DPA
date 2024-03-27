@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="https://i.pinimg.com/originals/5e/10/d7/5e10d70b73f61c76194ef63da8f5c22a.png"
+        type="image/x-icon">
+    <title>Airbnb | Login</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="login-form">
+            <div class="flex justify-center">
+                <img class=" top-img"
+                    src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/PJM020719Q202_Luxe_WanakaNZ_LivingRoom_0264-LightOn_R1.jpg?fit=3200%2C2133"
+                    alt="flowers">
+            </div>
+            <div class="lg:mt-26 mt-5 mb-6">
+                <h1 class="text-black text-2xl lg:text-5xl mb-5 md:text-3xl">Welcome to <span
+                        class="welcome">Airbnb</span></h1>
+                <p class="text-black text-xs lg:text-lg md:text-base">Travel far, travel wide, and travel with an open
+                    heart.
+                    <br>The world is your greatest teacher.
+                </p>
+            </div>
+            <form id="form-login" class="form-login">
+                <label for="email" class="m-1 text-xs md:text-base lg:text-lg">Email</label>
+                <input id="email" class="md:text-base lg:text-lg text-xs" type="email" name="email" placeholder="Example@email.com"
+                    required>
+                <label for="password" class="m-1 md:text-base text-xs lg:text-lg">Password</label>
+                <input id="password" class="text-xs md:text-base lg:text-lg" type="password" name="password"
+                    placeholder="At least 8 characters" required pattern=".{8,}"
+                    title="Eight or more characters">
+                <div class="text-right mt-2 mb-3 text-xs lg:text-base md:text-sm"><a href="#">Forgot Password?</a>
+                </div>
+                <button class="btn text-xs lg:text-base md:text-sm" type="submit">
+                    Sign in
+                </button>
+                <p class="text-xs lg:text-base md:text-sm mt-6 account text-center">Don't Have An Account? <a
+                        href="../SignUp/index.html">Sign up</a></p>
+            </form>
+            <div class="or-container">
+                <h3>or</h3>
+                <button class="btng text-xs lg:text-base md:text-sm" type="submit">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/1024px-Google_%22G%22_logo.svg.png"
+                        alt="#">Continue with Google
+                </button>
+
+
+                
+
+            </div>
+        </div>
+        <div class="right-img form-img ">
+            <img src="https://news.airbnb.com/wp-content/uploads/sites/4/2019/06/PJM020719Q202_Luxe_WanakaNZ_LivingRoom_0264-LightOn_R1.jpg?fit=3200%2C2133"
+                alt="landscape">
+        </div>
+        <!-- We’ll call or text you to confirm your number. Standard message and data rates apply. -->
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
