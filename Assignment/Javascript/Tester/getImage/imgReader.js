@@ -21,5 +21,4 @@ function dateTester(data) {
     }
 }
 
-
 fetchData()
